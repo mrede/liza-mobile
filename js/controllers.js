@@ -62,7 +62,7 @@ angular.module('starter.controllers', [])
   console.log("Startup: ", window.localStorage.getItem('token'))
 
   if (window.localStorage.getItem('token') != null) {
-  	//$state.go('tabs.dashboard');
+  	$state.go('tabs.dashboard');
   }
 
   $scope.signIn = function (user) {
